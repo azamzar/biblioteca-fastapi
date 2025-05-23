@@ -16,7 +16,7 @@ books_db: List[Book] = []
 
 @app.get("/")
 def index():
-    return {"message": "Hello, World!"}
+    return {"message": "Bienvenido/a a esta API de libros!"}
 
 @app.get("/books/{book_id}")
 def get_book(book_id: int):
